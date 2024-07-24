@@ -32,8 +32,15 @@ DEBUG = True
 ALLOWED_HOSTS = ['*']
 
 # Application definition
-CORS_ALLOW_ALL_ORIGINS = True
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://abhi-blog.up.railway.app',
+]
+CORS_ALLOWED_ORIGINS = [
+    'https://abhi-blog.up.railway.app',
+    'http://localhost:4200',  # Add your local development URL
+]
+CORS_ALLOW_CREDENTIALS = True
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -53,9 +60,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'corsheaders.middleware.CorsMiddleware',  # Correct middleware for CORS
+    'corsheaders.middleware.CorsMiddleware',
 ]
-
 ROOT_URLCONF = 'mysite.urls'
 
 TEMPLATES = [
