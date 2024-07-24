@@ -25,7 +25,7 @@ TEMPLATE_DIR = Path(BASE_DIR,'blog/templates/blog')
 SECRET_KEY = '4-6iv!nh6d8r1kz^u35%4x7waq=ydx@xv7x$@w-d$%=t0u@hnv'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 # ALLOWED_HOSTS = ['blog-project.railway.app','127.0.0.1']
 
