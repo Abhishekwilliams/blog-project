@@ -25,13 +25,14 @@ TEMPLATE_DIR = Path(BASE_DIR,'blog/templates/blog')
 SECRET_KEY = '4-6iv!nh6d8r1kz^u35%4x7waq=ydx@xv7x$@w-d$%=t0u@hnv'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 # ALLOWED_HOSTS = ['blog-project.railway.app','127.0.0.1']
 
 ALLOWED_HOSTS = ['*']
 
 # Application definition
+CORS_ALLOW_ALL_ORIGINS = True
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -41,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
@@ -51,6 +53,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',  # Correct middleware for CORS
 ]
 
 ROOT_URLCONF = 'mysite.urls'
