@@ -1,6 +1,30 @@
 {% extends "blog/base.html" %}
+{% load static %}
 {% block content %}
-<h1>About me</h1>
-<p>Thanks for visiting my blog! Check all this cool stuff about me!</p>
+<h1>About Me</h1>
+<p>Thanks for visiting my blog! Check out all this cool stuff about me!</p>
+
+<!-- Add CSS styles to make the image circular -->
+<img src="{% static 'images/animateddp.png' %}" alt="Abhishek Williams" style="width:200px;height:200px;border-radius:50%;object-fit:cover;margin-bottom:20px;">
+
+<p>Hello! I'm Abhishek Williams, a passionate Full Stack Developer with expertise in Python, C++, and various web technologies. I have a strong background in AI and Machine Learning, having completed my Ontario Graduate Certificate from Lambton College, Toronto. My technical skills include Angular, Vue.js, JavaScript, TypeScript, Django, and REST APIs.</p>
+
+<p>I have professional experience as an Angular/Vue.js Programmer/Developer at Unified Infotech, where I worked on creating asset management software and developing various user interface components. I also interned at NIC, MeitY, Govt. of India, where I contributed to a web application to track the grain distribution system throughout India.</p>
+
+<p>Some of my notable projects include:</p>
+<ul>
+    <li><strong>Detecting Dyslexia Using Eye Tracking:</strong> Tracked eye movement using a VR box, camera, and OpenCV for accurate analysis.</li>
+    <li><strong>Heart Disease Prediction System:</strong> Developed a Django-based full-stack website to predict heart disease using a random forest algorithm.</li>
+    <li><strong>Chat Bot:</strong> A project developed to scrape information from a website, store it in JSON, and use the information to answer user queries. <br>Skills: PineconeDB, Selenium, Python, Machine Learning.</li>
+    <li><strong>Orpheus Sabha:</strong> A website for a college public speaking platform. It aims to create awareness and outreach programs about public speaking platforms. <br>Skills: AngularJS, Django, HTML, CSS, TypeScript, SQL, MySQL.</li>
+    <li><strong>Connect 4 Game:</strong> A simple game developed using JavaScript, CSS, and HTML. Players take turns dropping colored discs into a grid to connect four in a row.<br>Skills: HTML, CSS, JavaScript, Git.</li>
+    <li><strong>My Blog Website:</strong> Welcome to Abhishek Williams' Tech Insights Blog, focusing on Angular, web development, and programming insights.<br>Skills: Django, JavaScript, HTML, CSS, Git.</li>
+</ul>
+
+<p>In my free time, I enjoy playing guitar, listening to music, watching anime, and gaming.</p>
+
+<p>Fun fact: I can solve a Rubik's cube! It's a great way to challenge my problem-solving skills and keep my mind sharp.</p>
+
+<p>Feel free to connect with me on <a href="https://www.linkedin.com/in/abhishekwilliams/">LinkedIn</a> or check out my <a href="https://github.com/Abhishekwilliams">GitHub</a> for more projects.</p>
 
 {% endblock %}
